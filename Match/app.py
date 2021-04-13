@@ -13,7 +13,7 @@ def find_index(x,y):
 py.init()
 display.set_caption('My Game')
 screen= display.set_mode((512,512))
-path=r'E:\my python\game\New folder\other_assests\matched.png'
+path=r'...\other_assests\matched.png'
 matched=image.load(path)
 mm=py.transform.scale(matched,(512,512))
 
