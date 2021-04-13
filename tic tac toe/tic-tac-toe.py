@@ -21,10 +21,11 @@ screen=py.display.set_mode((width,height+100),0,32)
 py.display.set_caption("Tic Tac Toe")
 
 #lodaing the images
-opening=py.image.load('E:\\my python\\game\\tic tac toe\\opening image.png')
-x_img=py.image.load('E:\\my python\game\\tic tac toe\\x.png')
-o_img=py.image.load('E:\\my python\game\\tic tac toe\\o.png')
-goodbye=py.image.load('E:\\my python\game\\tic tac toe\\goodbye.png')
+#enter image name to load them here
+opening=py.image.load()
+x_img=py.image.load()
+o_img=py.image.load()
+goodbye=py.image.load()
 #resizing images
 x_img = py.transform.scale(x_img, (80,80))
 o_img=py.transform.scale(o_img,(80,80))
