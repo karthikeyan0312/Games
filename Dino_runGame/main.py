@@ -25,9 +25,9 @@ screen = pygame.display.set_mode(scr_size)
 clock = pygame.time.Clock()
 pygame.display.set_caption("Dino Run ")
 
-jump_sound = pygame.mixer.Sound(r'E:\my python\Dino_RunGamePYTHON\Dino_runGame\sprites\jump.wav')
-die_sound = pygame.mixer.Sound(r'E:\my python\Dino_RunGamePYTHON\Dino_runGame\sprites\die.wav')
-checkPoint_sound = pygame.mixer.Sound(r'E:\my python\Dino_RunGamePYTHON\Dino_runGame\sprites\checkPoint.wav')
+jump_sound = pygame.mixer.Sound(r'\sprites\jump.wav')
+die_sound = pygame.mixer.Sound(r'\sprites\die.wav')
+checkPoint_sound = pygame.mixer.Sound(r'\sprites\checkPoint.wav')
 
 def load_image(
     name,
@@ -36,7 +36,7 @@ def load_image(
     colorkey=None,
     ):
 
-    fullname = os.path.join('E:\my python\Dino_RunGamePYTHON\Dino_runGame\sprites', name)
+    fullname = os.path.join('\sprites', name)
     image = pygame.image.load(fullname)
     image = image.convert()
     if colorkey is not None:
@@ -57,7 +57,7 @@ def load_sprite_sheet(
         scaley = -1,
         colorkey = None,
         ):
-    fullname = os.path.join('E:\my python\Dino_RunGamePYTHON\Dino_runGame\sprites',sheetname)
+    fullname = os.path.join('\sprites',sheetname)
     sheet = pygame.image.load(fullname)
     sheet = sheet.convert()
 
